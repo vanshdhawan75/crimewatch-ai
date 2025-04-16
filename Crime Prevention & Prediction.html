@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crime Prevention & Prediction</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo i {
+      margin-right: 8px;
+      color: #1abc9c;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #1abc9c;
+    }
+
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1400&q=80') center center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #1abc9c;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #16a085;
+    }
+
+    .features {
+      background: linear-gradient(to right, #eef2f3, #ffffff);
+      padding: 70px 30px;
+      text-align: center;
+    }
+
+    .features h2 {
+      font-size: 32px;
+      margin-bottom: 50px;
+      color: #2c3e50;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .feature-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      width: 280px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-card i {
+      font-size: 36px;
+      color: #1abc9c;
+      margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      padding: 60px 30px;
+      background: #1abc9c;
+      color: #fff;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><i class="fas fa-shield-alt"></i> CrimeWatch AI</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="log%20in%20page/felonyhault3.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Protecting the Future with Smart AI</h1>
+      <p>Revolutionizing crime prediction and prevention with advanced machine learning and data visualization tools.</p>
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Our Features</h2>
+    <div class="feature-list">
+      <div class="feature-card">
+        <i class="fas fa-map-marked-alt"></i>
+        <h3>Crime Mapping</h3>
+        <p>Real-time visual maps of crime-prone areas to stay aware and alert.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-brain"></i>
+        <h3>AI Prediction</h3>
+        <p>Predictive analytics to forecast potential criminal activities based on data trends.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-bell"></i>
+        <h3>Emergency Alerts</h3>
+        <p>Smart alerts sent instantly to law enforcement and nearby users in emergencies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question or suggestion? Reach out anytime!</p>
+    <p>Email: <strong>support@crimewatch.ai</strong> | Phone: <strong>+91-9876543210</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CrimeWatch AI. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
